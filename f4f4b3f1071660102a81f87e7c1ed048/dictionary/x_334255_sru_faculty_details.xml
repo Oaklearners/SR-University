@@ -3,7 +3,17 @@
         <element attributes="edge_encryption_enabled=true" label="Address" max_length="40" name="address" type="string"/>
         <element label="Contact" max_length="40" name="contact" type="phone_number_e164"/>
         <element attributes="edge_encryption_enabled=true" label="Date Of Birth" max_length="40" name="date_of_birth" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true" label="Department" max_length="40" name="department" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="department_name" choice_table="x_334255_sru_department" label="Department" max_length="40" name="department" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Designation" max_length="40" name="designation" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Associate Professor" value="assocprof"/>
+                <element inactive_on_update="false" label="Asst Professor" value="asstprof"/>
+                <element inactive_on_update="false" label="Professor" value="prof"/>
+                <element inactive_on_update="false" label="Teaching Assistant" value="labassistant"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="Faculty ID" max_length="40" name="faculty_id" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Faculty Name" max_length="40" name="faculty_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Gender" max_length="40" name="gender" type="choice">

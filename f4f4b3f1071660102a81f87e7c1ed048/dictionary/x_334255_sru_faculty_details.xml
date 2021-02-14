@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Faculty Details" max_length="40" name="x_334255_sru_faculty_details" type="collection">
+    <element label="Faculty Details" max_length="40" name="x_334255_sru_faculty_details" sizeclass="2" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Address" max_length="40" name="address" type="string"/>
         <element label="Contact" max_length="40" name="contact" type="phone_number_e164"/>
         <element attributes="edge_encryption_enabled=true" label="Date Of Birth" max_length="40" name="date_of_birth" type="glide_date"/>
@@ -22,7 +22,14 @@
                 <element inactive_on_update="false" label="Male" value="male"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" label="Higher Education" max_length="40" name="higher_education" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Higher Education" max_length="40" name="higher_education" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="B.Tech" value="btech"/>
+                <element inactive_on_update="false" label="M.Tech" value="mtech"/>
+                <element inactive_on_update="false" label="MCA" value="mca"/>
+                <element inactive_on_update="false" label="P.hd" value="phd"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
     </element>
 </database>

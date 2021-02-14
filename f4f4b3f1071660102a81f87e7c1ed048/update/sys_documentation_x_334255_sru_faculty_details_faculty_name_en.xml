@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="faculty_name" label="Faculty Name" language="en" table="x_334255_sru_faculty_details">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>faculty_name</element>
+            <help/>
+            <hint/>
+            <label>Faculty Name</label>
+            <language>en</language>
+            <name>x_334255_sru_faculty_details</name>
+            <plural>Faculty Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-02-14 04:11:34</sys_created_on>
+            <sys_id>ea377bb1075660102a81f87e7c1ed08c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Faculty Name</sys_name>
+            <sys_package display_value="SRU" source="x_334255_sru">f4f4b3f1071660102a81f87e7c1ed048</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SRU">f4f4b3f1071660102a81f87e7c1ed048</sys_scope>
+            <sys_update_name>sys_documentation_x_334255_sru_faculty_details_faculty_name_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-02-14 04:11:34</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
